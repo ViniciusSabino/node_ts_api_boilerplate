@@ -1,11 +1,11 @@
 import config from "../config";
-import dictionarie from "../utils/dictionaries";
+import dictionary from "../utils/dictionaries";
 
 const home = (ctx) => {
     const { application, environment } = config;
     ctx.ok({
         application,
-        description: dictionarie.home.applicationDescription,
+        description: dictionary.home.applicationDescription,
         environment,
     });
 };
