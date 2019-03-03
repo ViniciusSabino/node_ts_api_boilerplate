@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "alefragnani.bookmarks",
+        "coenraads.bracket-pair-colorizer",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "oderwat.indent-rainbow",
+        "pkief.material-icon-theme",
+        "lkytal.pomodoro",
+        "wayou.vscode-todo-highlight",
+        "minhthai.vscode-todo-parser",
+        "ansenhuang.vscode-view-readme"
+    ]
+}
