@@ -2,7 +2,7 @@
   <img src="images/koa.png" width="200">
 </p>
 
-# Node.js API Boilerplate
+# KOA API Boilerplate
 
 > Boilerplate para uma API simples com Node.js e Koa.js
 
