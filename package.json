@@ -12,34 +12,37 @@
         "build": "babel ./src -out-dir ./dist --source-maps --ignore ./src/**/*.test.js --no-babelrc",
         "lint": "eslint ."
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ViniciusSabino/nodejs_api_boilerplate.git"
-    },
     "husky": {
         "hooks": {
-            "pre-commit": "pretty-quick --staged",
-            "pre-push": "npm test"
+            "pre-push": "npm test && npm run lint"
         }
     },
     "nodemonConfig": {
         "exec": "babel-node ./src/server.js"
     },
-    "keywords": [
-        "boilerplate",
-        "api",
-        "node.js",
-        "koa",
-        "babel",
-        "es6",
-        "js"
-    ],
-    "author": "Vinícius Rocha <vnc.chelsea@gmail.com>",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ViniciusSabino/nodejs_api_boilerplate/issues"
+    "author": {
+        "name": "Vinícius Rocha",
+        "email": "vnc.chelsea@gmail.com",
+        "url": "https://github.com/ViniciusSabino"
     },
+    "contributors": [
+        {
+            "name": "Vinícius Rocha",
+            "email": "vnc.chelsea@gmail.com",
+            "url": "https://github.com/ViniciusSabino"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ViniciusSabino/nodejs_api_boilerplate.git"
+    },
+    "bugs": "https://github.com/ViniciusSabino/nodejs_api_boilerplate/issues",
     "homepage": "https://github.com/ViniciusSabino/nodejs_api_boilerplate#readme",
+    "license": "ISC",
+    "engines": {
+        "node": "&gt;= 12.13.0",
+        "npm": "&gt;= 6.12.0"
+    },
     "dependencies": {
         "axios": "^0.19.0",
         "chalk": "^2.4.2",
@@ -84,7 +87,7 @@
         "mockingoose": "^2.13.2",
         "node-env-run": "^3.0.2",
         "nodemon": "^1.18.10",
-        "prettier": "^1.16.4",
+        "prettier": "^1.19.1",
         "pretty-quick": "^1.10.0"
     }
 }
