@@ -6,7 +6,7 @@
     "scripts": {
         "test": "jest --expand --detect-open-handles",
         "test:watch": "jest --expand --detect-open-handles --only-changed --watch",
-        "test:watch-all": "jest --coverage --verbose --expand --detect-open-handles --watch-all",
+        "test:watch-all": "jest --expand --detect-open-handles --watch-all",
         "dev": "nodenv -e nodemon -- --exec",
         "start": "node ./dist/server.js",
         "build": "babel ./src -out-dir ./dist --source-maps --ignore ./src/**/*.test.js --no-babelrc",
