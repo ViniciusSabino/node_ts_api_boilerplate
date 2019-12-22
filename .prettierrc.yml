@@ -4,6 +4,6 @@ singleQuote: true
 jsxSingleQuote: true
 trailingComma: es5
 jsxBracketSameLine: true
-arrowParens: "always"
-parser: "babel"
-endOfLine: crlf
+arrowParens: 'always'
+parser: 'babel'
+endOfLine: lf

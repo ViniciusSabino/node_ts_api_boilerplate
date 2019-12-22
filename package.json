@@ -1,14 +1,15 @@
 {
-    "name": "nodejs_api_boilerplate_koa",
+    "name": "@boilerplate/node-api",
     "version": "1.0.0",
     "description": "Boilerplate for an ideal restfull api project with Node.js and Koa.js",
-    "main": "index.js",
+    "main": "dist/build.js",
     "scripts": {
-        "test": "jest --coverage --verbose=true",
-        "watch": "jest --coverage --watchAll",
-        "start": "node ./dist/server.js",
+        "test": "jest --expand --detect-open-handles",
+        "test:watch": "jest --expand --detect-open-handles --only-changed --watch",
+        "test:watch-all": "jest --coverage --verbose --expand --detect-open-handles --watch-all",
         "dev": "nodenv -e nodemon -- --exec",
-        "build": "babel ./src -d ./dist --source-maps",
+        "start": "node ./dist/server.js",
+        "build": "babel ./src -out-dir ./dist --source-maps --ignore ./src/**/*.test.js --no-babelrc",
         "lint": "eslint ."
     },
     "repository": {
